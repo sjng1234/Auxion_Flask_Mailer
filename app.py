@@ -25,7 +25,7 @@ cred_dict = {
   "auth_provider_x509_cert_url": os.environ.get('FB_AUTH_PROVIDER_CERT_URL'),
   "client_x509_cert_url": os.environ.get('FB_CLIENT_CERT_URL')
 }
-print(cred_dict)
+# print(cred_dict)
 cred = credentials.Certificate(cred_dict)
 firebase_admin.initialize_app(cred)
 db = firestore.client()
@@ -36,7 +36,7 @@ mail = Mail(app) # instantiate the mail class
    
 # configuration of mail
 app.config['MAIL_SERVER']= os.environ.get('MAIL_SERVER')
-app.config['MAIL_PORT'] = os.environ.get('MAIL_PORT')
+app.config['MAIL_PORT'] = int(os.environ.get('MAIL_PORT'))
 app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
 app.config['MAIL_USE_TLS'] = False
