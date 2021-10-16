@@ -65,7 +65,7 @@ def retrieve_email_data(email_id):
 @app.route("/send",methods=['POST'])
 def index():
     id = request.json['id']
-    # print(id)
+    print(id)
     email_data = retrieve_email_data(id)
     # print(email_data)
     if email_data:
