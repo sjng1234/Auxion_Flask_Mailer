@@ -95,4 +95,4 @@ def index():
         return 'Invalid Email Id',400
    
 if __name__ == '__main__':
-   app.run(debug=False, host='0.0.0.0', port=os.environ.get("PORT"))
+   app.run(debug=False, host=os.environ.get("HOST"), port=os.environ.get("PORT"))
