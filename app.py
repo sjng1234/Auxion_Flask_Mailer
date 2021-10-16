@@ -33,7 +33,7 @@ email_ref = db.collection("collectionDetails")
    
 app = Flask(__name__)
 mail = Mail(app) # instantiate the mail class
-   
+
 # configuration of mail
 app.config['MAIL_SERVER']= os.environ.get('MAIL_SERVER')
 app.config['MAIL_PORT'] = int(os.environ.get('MAIL_PORT'))
