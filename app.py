@@ -9,9 +9,6 @@ from firebase_admin import credentials,firestore
 from dotenv import load_dotenv
 
 import os
-# PORT = int(os.environ.get('PORT', 5000))
-# For local
-# load_dotenv('./.env')
 
 cred_dict = {
   "type": os.environ.get('FB_ACC_TYPE'),
@@ -97,4 +94,4 @@ def index():
         return 'Invalid Email Id',400
    
 if __name__ == '__main__':
-   app.run(debug=False, host='0.0.0.0', port=os.environ.get("PORT"))
+   app.run(debug=False, host='0.0.0.0', port='5000')
