@@ -17,7 +17,7 @@ cred_dict = {
   "type": os.environ.get('FB_ACC_TYPE'),
   "project_id": os.environ.get('FB_PROJECT_ID'),
   "private_key_id": os.environ.get('FB_PRIV_KEY_ID'),
-  "private_key": os.environ.get('FB_PRIV_KEY'),
+  "private_key": os.environ.get('FB_PRIV_KEY').replace('\\n', '\n'),
   "client_email": os.environ.get('FB_CLIENT_EMAIL'),
   "client_id": os.environ.get('FB_CLIENT_ID'),
   "auth_uri": os.environ.get('FB_AUTH_URI'),
