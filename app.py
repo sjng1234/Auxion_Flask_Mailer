@@ -25,6 +25,7 @@ cred_dict = {
   "auth_provider_x509_cert_url": os.environ.get('FB_AUTH_PROVIDER_CERT_URL'),
   "client_x509_cert_url": os.environ.get('FB_CLIENT_CERT_URL')
 }
+print(cred_dict)
 cred = credentials.Certificate(cred_dict)
 firebase_admin.initialize_app(cred)
 db = firestore.client()
