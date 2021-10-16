@@ -9,7 +9,7 @@ from firebase_admin import credentials,firestore
 from dotenv import load_dotenv
 
 import os
-
+# PORT = int(os.environ.get('PORT', 5000))
 # For local
 # load_dotenv('./.env')
 
@@ -97,4 +97,4 @@ def index():
         return 'Invalid Email Id',400
    
 if __name__ == '__main__':
-   app.run()
+   app.run(debug=False, port=os.environ.get("PORT", 5000))
