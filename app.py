@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 
 import os
 
+
 cred_dict = {
   "type": os.environ.get('FB_ACC_TYPE'),
   "project_id": os.environ.get('FB_PROJECT_ID'),
@@ -94,4 +95,4 @@ def index():
         return 'Invalid Email Id',400
    
 if __name__ == '__main__':
-   app.run(debug=False, host='0.0.0.0', port='5000') 
+   app.run(debug=False, host='0.0.0.0', port=os.environ.get("PORT"))
