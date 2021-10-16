@@ -45,7 +45,7 @@ mail = Mail(app)
 
 # enable CORS 
 CORS(app)
-# Testing Admin API
+# Testing Admin API 
 @app.route('/get',methods=['POST'])
 def get():
     try:
