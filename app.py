@@ -10,7 +10,8 @@ from dotenv import load_dotenv
 
 import os
 
-load_dotenv('./.env')
+# For local
+# load_dotenv('./.env')
 
 cred_dict = {
   "type": os.environ.get('FB_ACC_TYPE'),
