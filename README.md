@@ -1,5 +1,13 @@
 # Auxion_Flask_Mailer
 
+## IMPORTANT NOTE:
+Secrets and API Keys/ Configs are stored as environment variables locally or on deployment platforms. They are not included in this repository. Localhost testing will not work. For more details, please contact the team. 
+
+This flask backend API application is deployed at:
+https://auxion-mailer.herokuapp.com/
+
+This will be consumed as an API by our frontend web application.
+
 ## Project Setup
  
 ## Step 1: If virtualenv is not installed as a package (1st Time)
